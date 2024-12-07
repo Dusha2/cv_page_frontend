@@ -7,11 +7,125 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <form action="https://google.com">
-        <input type="text" name="firstName">
-        <input type="text" name="lastName">
+    <header class="header">
+        <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="my photo" class="avatar">
+        <h1 class="header__title">Roma | CV</h1>
+        <h3 class="header_subtitle">Frontend Developer</h3>
+    </header>
 
-        <button type="submit">Submit btn</button>
-    </form>
+    <main>
+        <section class="skills">
+            <h3>Skills</h3>
+            <details>
+                <summary>Skills list:</summary>
+
+                <ol>
+                    <li>1. HTML</li>
+                    <li>2. CSS</li>
+                    <li>3. JavaScript</li>
+                    <li>4. React</li>
+                    <li>5. Typescript</li>
+                </ol>
+            </details>
+        </section>
+        <article class="article">
+            <h4>Short article about me</h4>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem odio culpa voluptatibus quasi, quaerat corrupti aspernatur officiis pariatur tempore repudiandae voluptate praesentium voluptas adipisci alias at odit exercitationem iusto hic provident ex maxime quis explicabo? Neque quod odit laborum sint iste, officia nesciunt earum harum est distinctio ipsam minus!
+            </p>
+        </article>
+
+        <section class="gallery">
+            <h3>gallery</h3>
+            <img src="https://placehold.co/250x250" alt="placehold image">
+            <img src="https://placehold.co/250x250" alt="placehold image">
+            <img src="https://placehold.co/250x250" alt="placehold image">
+        </section>
+
+        <hr class="separator">
+
+        <section>
+            <iframe class="video" src="https://www.youtube.com/embed/N-Fa1tm3oz0?si=USXxIuNq6Ha8lBBD"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="hobbies">
+            <h4>My hobbies: </h4>
+
+            <details>
+                <summary>Hobbies</summary>
+
+                <ol>
+                    <li>Skiling</li>
+                    <li>Video editing</li>
+                    <li>Audio books</li>
+                </ol>
+            </details>
+        </section>
+
+        <hr class="separator">
+
+        <section class="education">
+            <table class="ed__table">
+                <thead>
+                    <tr>
+                        <th>School / Unitersity</th>
+                        <th>Profession</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>It school 1</td>
+                        <td>Angular Dev</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>IT school 2</td>
+                        <td>React Dev</td>
+                        <td>2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="quote">
+            <blockquote>
+                Lorem ipsum dolor sit amet consectetur.
+            </blockquote>
+        </section>
+
+
+        <section class="interaction">
+            <form action="https://google.com" method="get" class="form" target="_blank">
+                <fieldset>
+                    <legend>Required fields</legend>
+                    <div>
+                        <label for="firstName-id">First Name: </label>
+                        <input type="text" name="firstName" id="firstName-id" required>
+                    </div>
+                    
+                    <div>
+                        <label for="lastName-id">Last Name: </label>
+                        <input type="text" name="lastName" id="lastName-id" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email-id">Email: </label>
+                        <input type="email" name="email" id="email-id" required>
+                    </div>
+                </fieldset>
+
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <button type="submit">Submil</button>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
