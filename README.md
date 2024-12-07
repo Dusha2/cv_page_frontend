@@ -10,4 +10,4 @@
 
 ![image](https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp)
 
-[Cv page repository](https:\\google.com)
+[Cv page repository](https://dusha2.github.io/cv_page_frontend/)
