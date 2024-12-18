@@ -3,129 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Aivazovski</title>
 </head>
-<body>
-    <header class="header">
-        <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="my photo" class="avatar">
-        <h1 class="header__title">Roma | CV</h1>
-        <h3 class="header_subtitle">Frontend Developer</h3>
+<body> 
+    <header class="header" aria-label="header">
+        <div class="container">
+            <nav class="nav" aria-label="header navigation">
+                <ul class="nav-list" aria-label="header navigation list">
+                    <li>
+                        <a href="#" class="nav-link" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" aria-label="link to about">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" aria-label="link to history">History</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" aria-label="link to portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" aria-label="link to contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <main>
-        <section class="skills">
-            <h3>Skills</h3>
-            <details>
-                <summary>Skills list:</summary>
-
-                <ol>
-                    <li>1. HTML</li>
-                    <li>2. CSS</li>
-                    <li>3. JavaScript</li>
-                    <li>4. React</li>
-                    <li>5. Typescript</li>
-                </ol>
-            </details>
+    <main aria-label="main">
+        <section class="home" aria-label="home section">
+            <div class="container">
+                <h1 class="home-title" aria-label="title">Ivan Constantinovich Aivazovski</h1>
+                <p class="home-description" aria-label="description">Russian marine painter of Armenian origin, collector, philanthropist</p>
+                <img src="assets/webp/home.webp" alt="photo of Aivazovski" class="home-img">
         </section>
-        <article class="article">
-            <h4>Short article about me</h4>
+        <section class="about" aria-label="about section">
+            <div class="container">
+                <h2 class="about-title" aria-label="about title">About</h2>
+                <h3 class="about-subtitle-ru" aria-label="about subtitle ru">Ива́н Константи́нович Айвазо́вский – русский живописец-маринист армянского происхождения, коллекционер, меценат.</h3>
+                <p class="about-description-ru" aria-label="description ru">Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и работать на своей родине —
+                в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые составляют больше половины его работ. Художник
+                считается одним из величайших маринистов всех времён.</p>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem odio culpa voluptatibus quasi, quaerat corrupti aspernatur officiis pariatur tempore repudiandae voluptate praesentium voluptas adipisci alias at odit exercitationem iusto hic provident ex maxime quis explicabo? Neque quod odit laborum sint iste, officia nesciunt earum harum est distinctio ipsam minus!
-            </p>
-        </article>
+                <hr class="divider" aria-label="divider">
 
-        <section class="gallery">
-            <h3>gallery</h3>
-            <img src="https://placehold.co/250x250" alt="placehold image">
-            <img src="https://placehold.co/250x250" alt="placehold image">
-            <img src="https://placehold.co/250x250" alt="placehold image">
+                <h3 class="about-subtitle-en" aria-label="about subtitle en">Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector, philanthropist.</h3>
+                <p class="about-description-en" aria-label="description en">Being a world famous artist, Ivan Konstantinovich Aivazovsky preferred to live and work in his homeland - in the Crimea.
+                Aivazovsky is best known for his seascapes, which make up more than half of his work. The artist is considered one of
+                the greatest marine painters of all time.</p>
+            </div>
+
         </section>
-
-        <hr class="separator">
-
-        <section>
-            <iframe class="video" src="https://www.youtube.com/embed/N-Fa1tm3oz0?si=USXxIuNq6Ha8lBBD"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-
-        <section class="hobbies">
-            <h4>My hobbies: </h4>
-
-            <details>
-                <summary>Hobbies</summary>
-
-                <ol>
-                    <li>Skiling</li>
-                    <li>Video editing</li>
-                    <li>Audio books</li>
-                </ol>
-            </details>
-        </section>
-
-        <hr class="separator">
-
-        <section class="education">
-            <table class="ed__table">
-                <thead>
-                    <tr>
-                        <th>School / Unitersity</th>
-                        <th>Profession</th>
-                        <th>Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>It school 1</td>
-                        <td>Angular Dev</td>
-                        <td>2019</td>
-                    </tr>
-                    <tr>
-                        <td>IT school 2</td>
-                        <td>React Dev</td>
-                        <td>2020</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="quote">
-            <blockquote>
-                Lorem ipsum dolor sit amet consectetur.
-            </blockquote>
-        </section>
-
-
-        <section class="interaction">
-            <form action="https://google.com" method="get" class="form" target="_blank">
-                <fieldset>
-                    <legend>Required fields</legend>
-                    <div>
-                        <label for="firstName-id">First Name: </label>
-                        <input type="text" name="firstName" id="firstName-id" required>
-                    </div>
-                    
-                    <div>
-                        <label for="lastName-id">Last Name: </label>
-                        <input type="text" name="lastName" id="lastName-id" required>
-                    </div>
-                    
-                    <div>
-                        <label for="email-id">Email: </label>
-                        <input type="email" name="email" id="email-id" required>
-                    </div>
-                </fieldset>
-
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-
-                <button type="submit">Submil</button>
-            </form>
+        <section class="history-section" aria-label="history section">
+            <div class="container">
+                <h2 class="history-title">History</h2>
+                <img src="./assets/webp/history.webp" alt="house of Aivazovsky" class="history-photo">
+                <p class="history-description" aria-label="history description">
+                    Дом в котором родился Айвазовский | The house where Aivazovsky was born
+                </p>
+            </div>
         </section>
     </main>
-
-    <footer></footer>
 </body>
 </html>
